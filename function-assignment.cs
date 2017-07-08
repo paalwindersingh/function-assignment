@@ -9,9 +9,12 @@ namespace FunctionAssignment
    {
         static void Main(string[] args)
         {
-            int a =10;
-            int b = 20;
-            int c = 8;
+            Console.Write("enter value of a ");
+            int a = Convert.ToInt32(Console.ReadLine());
+            Console.Write("enter value of b ");
+            int b = Convert.ToInt32(Console.ReadLine());
+            Console.Write("enter value of c ");
+            int c = Convert.ToInt32(Console.ReadLine());
 
             Console.WriteLine(high(a, b, c));
             Console.WriteLine(high(a, b));
