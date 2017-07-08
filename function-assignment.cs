@@ -22,6 +22,9 @@ namespace FunctionAssignment
             Console.WriteLine(low(a, b));
             Console.WriteLine(isOdd(a));
             Console.WriteLine(isEven(b));
+
+            int [] marks = new int[] { 99, 98, 92, 97, 95, 8, 19};
+            Console.WriteLine(contains(marks,8));
             Console.ReadKey();
         }
 
@@ -103,6 +106,17 @@ namespace FunctionAssignment
             else {
                 return false;
             }
+        }
+        static bool contains(int[] array, int key)
+        {
+          for (int i = 1;i<=array.Length;i++){
+              if(array[i] == key)
+                  return true;
+              else
+                  return false;
+                  
+          }
+            return false;
         }
    }
 }
